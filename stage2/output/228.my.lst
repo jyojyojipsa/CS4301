@@ -1,0 +1,16 @@
+STAGE2:  Kangmin Kim, Jeff Caldwell   Wed Dec  7 00:20:48 2022
+
+LINE NO.              SOURCE STATEMENT
+
+    1|program stage2no228;
+    2|var a:integer;
+    3|begin    
+    4|  a := 0;
+    5|  if false then
+    6|    ;
+    7|  else
+    8|    a := 1;
+    9|  write(a);
+   10|end.
+
+COMPILATION TERMINATED      0 ERRORS ENCOUNTERED

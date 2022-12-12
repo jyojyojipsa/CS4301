@@ -1,0 +1,142 @@
+Kangmin Kim
+CS 4301
+Lab 10
+{(x=, x=ans) | x is in {a,b}* and
+               ans = 1 if x has twice as many a's as b's, and
+               ans = 0 otherwise}
+
+Input:  =
+Output:            =1
+
+Input:  a=
+Output:            a=0
+
+Input:  b=
+Output:            b=0
+
+Input:  aa=
+Output:            aa=0
+
+Input:  ab=
+Output:            ab=0
+
+Input:  ba=
+Output:            ba=0
+
+Input:  bb=
+Output:            bb=0
+
+Input:  aaa=
+Output:            aaa=0
+
+Input:  aab=
+Output:            aab=1
+
+Input:  aba=
+Output:            aba=1
+
+Input:  abb=
+Output:            abb=0
+
+Input:  baa=
+Output:            baa=1
+
+Input:  bab=
+Output:            bab=0
+
+Input:  bba=
+Output:            bba=0
+
+Input:  bbb=
+Output:            bbb=0
+
+Input:  aaba=
+Output:            aaba=0
+
+Input:  aabb=
+Output:            aabb=0
+
+Input:  abab=
+Output:            abab=0
+
+Input:  babb=
+Output:            babb=0
+
+Input:  bbba=
+Output:            bbba=0
+
+Input:  aaaab=
+Output:            aaaab=0
+
+Input:  aabab=
+Output:            aabab=0
+
+Input:  baaaa=
+Output:            baaaa=0
+
+Input:  aaaabb=
+Output:            aaaabb=1
+
+Input:  aaabab=
+Output:            aaabab=1
+
+Input:  aaabba=
+Output:            aaabba=1
+
+Input:  aabaab=
+Output:            aabaab=1
+
+Input:  aababa=
+Output:            aababa=1
+
+Input:  aabbaa=
+Output:            aabbaa=1
+
+Input:  abaaab=
+Output:            abaaab=1
+
+Input:  abaaba=
+Output:            abaaba=1
+
+Input:  ababaa=
+Output:            ababaa=1
+
+Input:  abbaaa=
+Output:            abbaaa=1
+
+Input:  baaaab=
+Output:            baaaab=1
+
+Input:  baaaba=
+Output:            baaaba=1
+
+Input:  baabaa=
+Output:            baabaa=1
+
+Input:  babaaa=
+Output:            babaaa=1
+
+Input:  bbaaaa=
+Output:            bbaaaa=1
+
+Input:  aaabbbb=
+Output:            aaabbbb=0
+
+Input:  baaabaab=
+Output:            baaabaab=0
+
+Input:  bbaaaaab=
+Output:            bbaaaaab=0
+
+Input:  bbbaaaaa=
+Output:            bbbaaaaa=0
+
+Input:  aaaaaabbbb=
+Output:            aaaaaabbbb=0
+
+Input:  aaaabbbbbb=
+Output:            aaaabbbbbb=0
+
+Input:  bbbbaaaaaa=
+Output:            bbbbaaaaaa=0
+

@@ -1,0 +1,11 @@
+STAGE2:  Kangmin Kim, Jeff Caldwell   Wed Dec  7 00:20:48 2022
+
+LINE NO.              SOURCE STATEMENT
+
+    1|program stage2no210;  {improper uses of Pascallite features.}
+    2|  var x,y,z:integer;  why:boolean;
+    3|  begin
+    4|    if x then 
+Error: Line 4: if predicate must be of type boolean
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED

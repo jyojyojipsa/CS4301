@@ -1,0 +1,11 @@
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|{contributed by Joel King, 2021-Nov-28}
+    2|program    stage0no052; {tests: const non_key_id = not non_key_id;}
+    3|  const yes=true;no=false;
+    4|    should_be_true = not no;
+Error: Line 4: boolean expected after "not"
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED

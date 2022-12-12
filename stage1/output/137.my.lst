@@ -1,0 +1,17 @@
+STAGE1:  Jeff Caldwell, Kangmin Kim       Sun Nov 27 09:52:21 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage1no137;
+    2|var
+    3|  a, b, c, d : integer;
+    4|begin
+    5|  read(a, b, c);
+    6|  write(a, b, c);
+    7|  d := a + (b - c);
+    8|  write(d);
+    9|  d := b * b - 4 * a * c;
+   10|  write(d);
+   11|end.
+
+COMPILATION TERMINATED      0 ERRORS ENCOUNTERED

@@ -1,0 +1,2391 @@
+All Listing and Assembly Files
+
+./output/001.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program    stage0no001;   {here is a comment}
+    2|     const
+    3|     yes=true;no=false;
+    4|           small=0;smalleryet=-1;
+    5|           big = 1;  biggeryet = 2..
+Error: Line 5: semicolon expected
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/002.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no002;
+    2|      {illustrate erroneous use of Pascallite features:}
+    3|	    {odd vs. even length in comment okay          }
+    4|        {should find z+ as illegal name              }
+    5|
+    6|   var x: integer;     
+    7|       z+:
+Error: Line 7: ":" expected
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/003.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no003;
+    2|      {illustrate erroneous use of Pascallite features.}
+    3|      {tests spelling of integer}
+    4|
+    5|
+    6|   var ram: integer;
+    7|       asis: integr;
+Error: Line 7: illegal type follows ":"
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/004.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no004;
+    2|      {x may not be redefined}
+    3|
+    4|   var x: integer; {x may not be redefined}
+    5|       x: integer; 
+Error: Line 5: symbol x is multiply defined
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/005.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no005;
+    2|      {illustrate erroneous use of Pascallite features.}
+    3|      {const must come before var}
+    4|
+    5|		 var y:integer;
+    6|    const 
+Error: Line 6: non-keyword identifier or "begin" expected
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/006.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no006;
+    2|      {illustrate erroneous use of Pascallite features.}
+    3|      {no lists of constants allowed}
+    4| 
+    5|    const help = 32;
+    6|
+    7|       s,t
+Error: Line 7: "=" expected
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/007.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no007;
+    2|      {illustrate erroneous use of Pascallite features.}
+    3|      {program should end with a period, not a semicolon}
+    4|
+    5|    const help = 32;
+    6|          ram = 3;
+    7|    begin end; 
+Error: Line 7: period expected
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/008.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no008;
+    2|	{reserved keyword var misused as nonkey_id}
+    3|
+    4|	const var 
+Error: Line 4: non-keyword identifier must follow "const"
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/009.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no009;
+    2|    { { need a literal and '=' for a constant
+    3|  also test two opens and one close}
+    4|
+    5|   const car = 2;
+    6|         silly:b
+Error: Line 6: "=" expected
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/010.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no010;
+    2|    {only one occurrence of 'const' allowed}
+    3|
+    4|   const car = 2;
+    5|   const 
+Error: Line 5: non - keyword identifier, "begin", or "var" expected
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/011.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no011;
+    2|   {no real numbers in our Pascallite}
+    3|
+    4|   const car = 2;
+    5|         wrong = 3.5
+Error: Line 5: semicolon expected
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/012.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no012;
+    2|  {no embedded blanks in a token}
+    3|
+    4|   const car = 2;
+    5|         po or 
+Error: Line 5: "=" expected
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/013.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no013;
+    2|    {referencing an undefined constant}
+    3|
+    4|   const car = 2;
+    5|         s = b; 
+Error: Line 5: variable b is undefined
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/014.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no014;
+    2|   {   no embedded begin-end statement allowed}
+    3|
+    4|   const car = 2;
+    5|   begin begin 
+Error: Line 5: keyword "end" expected
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/015.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no015;
+    2|{ only whitespace and comments are legal following "end." }
+    3|    const yes = true; no = false;
+    4|          small = 0; smalleryet = -1;
+    5|          big = 1; biggeryet = 2;
+    6|          same = big;
+    7|	 var   some : integer;
+    8|          right: boolean;
+    9|    begin
+   10|    end.    const
+
+Error: Line 10: no tokens may appear after "end."
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/016.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no016;
+    2|      { { tests embedded comments should be illegal } }
+Error: Line 2: '}' cannot begin token
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/017.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no017;
+    2|		  {demonstrate erroneous features of Pascallite}
+    3|		  {test reserved word split between two lines
+    4|	 should be error}
+    5|  con
+
+Error: Line 5: keyword "begin" expected
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/018.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no018;
+    2|         {test a lot of long non_key_ids, should be okay}
+    3|  const  zero = 0;  five{5} = 5;
+    4|  var
+    5|aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa:  integer;
+    6|bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb:  integer;
+    7|ccccccccccccccccccccccccccccccc:  integer;
+    8|ddddddddddddddddddddddddddddddd:  integer;
+    9|eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee:  integer;
+   10|fffffffffffffffffffffffffffffff:  integer;
+   11|ggggggggggggggggggggggggggggggg:  integer;
+   12|hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh:  integer;
+   13|iiiiiiiiiiiiiiiiiiiiiiiiiiiiiii:  integer;
+   14|jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj:  integer;
+   15|kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk:  integer;
+   16|lllllllllllllllllllllllllllllll:  integer;
+   17|mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm:  integer;
+   18|nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn:  integer;
+   19|ooooooooooooooooooooooooooooooo:  integer;
+   20|ppppppppppppppppppppppppppppppp:  integer;
+   21|qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq:  integer;
+   22|rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr:  integer;
+   23|sssssssssssssssssssssssssssssss:  integer;
+   24|ttttttttttttttttttttttttttttttt:  integer;
+   25|uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu:  integer;
+   26|vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv:  integer;
+   27|wwwwwwwwwwwwwwwwwwwwwwwwwwwwwww:  integer;
+   28|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx:  integer;
+   29|yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:  integer;
+   30|zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz: integer;       d: 
+   31| boolean;
+   32|  begin
+   33|end  .
+
+COMPILATION TERMINATED      0 ERRORS ENCOUNTERED
+
+./output/019.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no019;
+    2|		 { identifiers should not start with an underscore }
+    3|    const yes = true; no = false;
+    4|          small = 0; smalleryet = -1;
+    5|          big = 1; bigger_yet = 2;
+    6|          _
+Error: Line 6: illegal symbol
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/020.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no020;
+    2|		 { identifiers should not end with an underscore }
+    3|    const yes = true; no = false;
+    4|          small = 0; smalleryet ={} -1;
+    5|          big = 1; bigger_yet = 2;
+    6|        var   some_ 
+Error: Line 6: illegal character '_'
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/021.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no021;
+    2|		 { No caps for us at all}
+    3|    const Y
+Error: Line 3: illegal symbol
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/022.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no022;
+    2|		 { remember, all vars and consts max of 15 chars
+    3|		   so trancate at 15, and get multiply defined symbols
+    4|		   }
+    5|    const yes = true; no = false;
+    6|          small = 0; smalleryet = -1;
+    7|   	 var   some : integer;
+    8|          right: boolean;
+    9|          aaaaaaaaaaaaaaaaaaaa1,
+   10|          aaaaaaaaaaaaaaaaaaaa2:integer;
+
+Error: Line 10: symbol aaaaaaaaaaaaaaa is multiply defined
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/023.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no023;
+    2|		 { No caps for us at all, not even for reserved words}
+    3|    C
+Error: Line 3: illegal symbol
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/024.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program ;
+
+Error: Line 1: program name expected
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/025.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no025;
+    2|		 {missing ending bracket
+    3|    const yes = true; no = false;
+    4|         	 var   some : integer;
+    5|         
+    6|    begin end.    
+
+Error: Line 6: unexpected end of file
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/026.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no026;
+    2|         {fill the symbol table with 256 entries; should be ok}
+    3|  var
+    4|var000,var001,var002,var003,var004,var005,var006,var007,var008,var009,
+    5|var010,var011,var012,var013,var014,var015,var016,var017,var018,var019,
+    6|var020,var021,var022,var023,var024,var025,var026,var027,var028,var029,
+    7|var030,var031,var032,var033,var034,var035,var036,var037,var038,var039,
+    8|var040,var041,var042,var043,var044,var045,var046,var047,var048,var049,
+    9|var050,var051,var052,var053,var054,var055,var056,var057,var058,var059,
+   10|var060,var061,var062,var063,var064,var065,var066,var067,var068,var069,
+   11|var070,var071,var072,var073,var074,var075,var076,var077,var078,var079,
+   12|var080,var081,var082,var083,var084,var085,var086,var087,var088,var089,
+   13|var090,var091,var092,var093,var094,var095,var096,var097,var098,var099,
+   14|var100,var101,var102,var103,var104,var105,var106,var107,var108,var109,
+   15|var110,var111,var112,var113,var114,var115,var116,var117,var118,var119,
+   16|var120,var121,var122,var123,var124,var125,var126,var127,var128,var129,
+   17|var130,var131,var132,var133,var134,var135,var136,var137,var138,var139,
+   18|var140,var141,var142,var143,var144,var145,var146,var147,var148,var149,
+   19|var150,var151,var152,var153,var154,var155,var156,var157,var158,var159,
+   20|var160,var161,var162,var163,var164,var165,var166,var167,var168,var169,
+   21|var170,var171,var172,var173,var174,var175,var176,var177,var178,var179,
+   22|var180,var181,var182,var183,var184,var185,var186,var187,var188,var189,
+   23|var190,var191,var192,var193,var194,var195,var196,var197,var198,var199,
+   24|var200,var201,var202,var203,var204,var205,var206,var207,var208,var209,
+   25|var210,var211,var212,var213,var214,var215,var216,var217,var218,var219,
+   26|var220,var221,var222,var223,var224,var225,var226,var227,var228,var229,
+   27|var230,var231,var232,var233,var234,var235,var236,var237,var238,var239,
+   28|var240,var241,var242,var243,var244,var245,var246,var247,var248,var249,
+   29|var250,var251,var252,var253,var254
+   30|: integer;
+   31|  begin
+   32|end  .
+
+COMPILATION TERMINATED      0 ERRORS ENCOUNTERED
+
+./output/027.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no027;
+    2|         {fill the symbol table with 257 entries;
+    3|          should be symbol table overflow}
+    4|  var
+    5|var000,var001,var002,var003,var004,var005,var006,var007,var008,var009,
+    6|var010,var011,var012,var013,var014,var015,var016,var017,var018,var019,
+    7|var020,var021,var022,var023,var024,var025,var026,var027,var028,var029,
+    8|var030,var031,var032,var033,var034,var035,var036,var037,var038,var039,
+    9|var040,var041,var042,var043,var044,var045,var046,var047,var048,var049,
+   10|var050,var051,var052,var053,var054,var055,var056,var057,var058,var059,
+   11|var060,var061,var062,var063,var064,var065,var066,var067,var068,var069,
+   12|var070,var071,var072,var073,var074,var075,var076,var077,var078,var079,
+   13|var080,var081,var082,var083,var084,var085,var086,var087,var088,var089,
+   14|var090,var091,var092,var093,var094,var095,var096,var097,var098,var099,
+   15|var100,var101,var102,var103,var104,var105,var106,var107,var108,var109,
+   16|var110,var111,var112,var113,var114,var115,var116,var117,var118,var119,
+   17|var120,var121,var122,var123,var124,var125,var126,var127,var128,var129,
+   18|var130,var131,var132,var133,var134,var135,var136,var137,var138,var139,
+   19|var140,var141,var142,var143,var144,var145,var146,var147,var148,var149,
+   20|var150,var151,var152,var153,var154,var155,var156,var157,var158,var159,
+   21|var160,var161,var162,var163,var164,var165,var166,var167,var168,var169,
+   22|var170,var171,var172,var173,var174,var175,var176,var177,var178,var179,
+   23|var180,var181,var182,var183,var184,var185,var186,var187,var188,var189,
+   24|var190,var191,var192,var193,var194,var195,var196,var197,var198,var199,
+   25|var200,var201,var202,var203,var204,var205,var206,var207,var208,var209,
+   26|var210,var211,var212,var213,var214,var215,var216,var217,var218,var219,
+   27|var220,var221,var222,var223,var224,var225,var226,var227,var228,var229,
+   28|var230,var231,var232,var233,var234,var235,var236,var237,var238,var239,
+   29|var240,var241,var242,var243,var244,var245,var246,var247,var248,var249,
+   30|var250,var251,var252,var253,var254,var255
+   31|: integer;
+
+Error: Line 31: symbol table overflow
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/028.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no028;
+    2|         {fill the symbol table with 256 entries; should be ok}
+    3|  var
+    4|var000 : integer;
+    5|var001 : integer;
+    6|var002 : integer;
+    7|var003 : integer;
+    8|var004 : integer;
+    9|var005 : integer;
+   10|var006 : integer;
+   11|var007 : integer;
+   12|var008 : integer;
+   13|var009 : integer;
+   14|
+   15|var010 : integer;
+   16|var011 : integer;
+   17|var012 : integer;
+   18|var013 : integer;
+   19|var014 : integer;
+   20|var015 : integer;
+   21|var016 : integer;
+   22|var017 : integer;
+   23|var018 : integer;
+   24|var019 : integer;
+   25|
+   26|var020 : integer;
+   27|var021 : integer;
+   28|var022 : integer;
+   29|var023 : integer;
+   30|var024 : integer;
+   31|var025 : integer;
+   32|var026 : integer;
+   33|var027 : integer;
+   34|var028 : integer;
+   35|var029 : integer;
+   36|
+   37|var030 : integer;
+   38|var031 : integer;
+   39|var032 : integer;
+   40|var033 : integer;
+   41|var034 : integer;
+   42|var035 : integer;
+   43|var036 : integer;
+   44|var037 : integer;
+   45|var038 : integer;
+   46|var039 : integer;
+   47|
+   48|var040 : integer;
+   49|var041 : integer;
+   50|var042 : integer;
+   51|var043 : integer;
+   52|var044 : integer;
+   53|var045 : integer;
+   54|var046 : integer;
+   55|var047 : integer;
+   56|var048 : integer;
+   57|var049 : integer;
+   58|
+   59|var050 : integer;
+   60|var051 : integer;
+   61|var052 : integer;
+   62|var053 : integer;
+   63|var054 : integer;
+   64|var055 : integer;
+   65|var056 : integer;
+   66|var057 : integer;
+   67|var058 : integer;
+   68|var059 : integer;
+   69|
+   70|var060 : integer;
+   71|var061 : integer;
+   72|var062 : integer;
+   73|var063 : integer;
+   74|var064 : integer;
+   75|var065 : integer;
+   76|var066 : integer;
+   77|var067 : integer;
+   78|var068 : integer;
+   79|var069 : integer;
+   80|
+   81|var070 : integer;
+   82|var071 : integer;
+   83|var072 : integer;
+   84|var073 : integer;
+   85|var074 : integer;
+   86|var075 : integer;
+   87|var076 : integer;
+   88|var077 : integer;
+   89|var078 : integer;
+   90|var079 : integer;
+   91|
+   92|var080 : integer;
+   93|var081 : integer;
+   94|var082 : integer;
+   95|var083 : integer;
+   96|var084 : integer;
+   97|var085 : integer;
+   98|var086 : integer;
+   99|var087 : integer;
+  100|var088 : integer;
+  101|var089 : integer;
+  102|
+  103|var090 : integer;
+  104|var091 : integer;
+  105|var092 : integer;
+  106|var093 : integer;
+  107|var094 : integer;
+  108|var095 : integer;
+  109|var096 : integer;
+  110|var097 : integer;
+  111|var098 : integer;
+  112|var099 : integer;
+  113|
+  114|var100 : integer;
+  115|var101 : integer;
+  116|var102 : integer;
+  117|var103 : integer;
+  118|var104 : integer;
+  119|var105 : integer;
+  120|var106 : integer;
+  121|var107 : integer;
+  122|var108 : integer;
+  123|var109 : integer;
+  124|
+  125|var110 : integer;
+  126|var111 : integer;
+  127|var112 : integer;
+  128|var113 : integer;
+  129|var114 : integer;
+  130|var115 : integer;
+  131|var116 : integer;
+  132|var117 : integer;
+  133|var118 : integer;
+  134|var119 : integer;
+  135|
+  136|var120 : integer;
+  137|var121 : integer;
+  138|var122 : integer;
+  139|var123 : integer;
+  140|var124 : integer;
+  141|var125 : integer;
+  142|var126 : integer;
+  143|var127 : integer;
+  144|var128 : integer;
+  145|var129 : integer;
+  146|
+  147|var130 : integer;
+  148|var131 : integer;
+  149|var132 : integer;
+  150|var133 : integer;
+  151|var134 : integer;
+  152|var135 : integer;
+  153|var136 : integer;
+  154|var137 : integer;
+  155|var138 : integer;
+  156|var139 : integer;
+  157|
+  158|var140 : integer;
+  159|var141 : integer;
+  160|var142 : integer;
+  161|var143 : integer;
+  162|var144 : integer;
+  163|var145 : integer;
+  164|var146 : integer;
+  165|var147 : integer;
+  166|var148 : integer;
+  167|var149 : integer;
+  168|
+  169|var150 : integer;
+  170|var151 : integer;
+  171|var152 : integer;
+  172|var153 : integer;
+  173|var154 : integer;
+  174|var155 : integer;
+  175|var156 : integer;
+  176|var157 : integer;
+  177|var158 : integer;
+  178|var159 : integer;
+  179|
+  180|var160 : integer;
+  181|var161 : integer;
+  182|var162 : integer;
+  183|var163 : integer;
+  184|var164 : integer;
+  185|var165 : integer;
+  186|var166 : integer;
+  187|var167 : integer;
+  188|var168 : integer;
+  189|var169 : integer;
+  190|
+  191|var170 : integer;
+  192|var171 : integer;
+  193|var172 : integer;
+  194|var173 : integer;
+  195|var174 : integer;
+  196|var175 : integer;
+  197|var176 : integer;
+  198|var177 : integer;
+  199|var178 : integer;
+  200|var179 : integer;
+  201|
+  202|var180 : integer;
+  203|var181 : integer;
+  204|var182 : integer;
+  205|var183 : integer;
+  206|var184 : integer;
+  207|var185 : integer;
+  208|var186 : integer;
+  209|var187 : integer;
+  210|var188 : integer;
+  211|var189 : integer;
+  212|
+  213|var190 : integer;
+  214|var191 : integer;
+  215|var192 : integer;
+  216|var193 : integer;
+  217|var194 : integer;
+  218|var195 : integer;
+  219|var196 : integer;
+  220|var197 : integer;
+  221|var198 : integer;
+  222|var199 : integer;
+  223|
+  224|var200 : integer;
+  225|var201 : integer;
+  226|var202 : integer;
+  227|var203 : integer;
+  228|var204 : integer;
+  229|var205 : integer;
+  230|var206 : integer;
+  231|var207 : integer;
+  232|var208 : integer;
+  233|var209 : integer;
+  234|
+  235|var210 : integer;
+  236|var211 : integer;
+  237|var212 : integer;
+  238|var213 : integer;
+  239|var214 : integer;
+  240|var215 : integer;
+  241|var216 : integer;
+  242|var217 : integer;
+  243|var218 : integer;
+  244|var219 : integer;
+  245|
+  246|var220 : integer;
+  247|var221 : integer;
+  248|var222 : integer;
+  249|var223 : integer;
+  250|var224 : integer;
+  251|var225 : integer;
+  252|var226 : integer;
+  253|var227 : integer;
+  254|var228 : integer;
+  255|var229 : integer;
+  256|
+  257|var230 : integer;
+  258|var231 : integer;
+  259|var232 : integer;
+  260|var233 : integer;
+  261|var234 : integer;
+  262|var235 : integer;
+  263|var236 : integer;
+  264|var237 : integer;
+  265|var238 : integer;
+  266|var239 : integer;
+  267|
+  268|var240 : integer;
+  269|var241 : integer;
+  270|var242 : integer;
+  271|var243 : integer;
+  272|var244 : integer;
+  273|var245 : integer;
+  274|var246 : integer;
+  275|var247 : integer;
+  276|var248 : integer;
+  277|var249 : integer;
+  278|
+  279|var250 : integer;
+  280|var251 : integer;
+  281|var252 : integer;
+  282|var253 : integer;
+  283|var254 : integer;
+  284|  begin
+  285|end  .
+
+COMPILATION TERMINATED      0 ERRORS ENCOUNTERED
+
+./output/029.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no029;
+    2|		 { comments after "end." are OK }
+    3|    const yes = true; no = false;
+    4|          small = 0; smalleryet ={} -1;
+    5|          big = 1; bigger_yet = 2;
+    6|        var   some : integer;
+    7|    begin   end.    { this is a comment after "end." }
+
+COMPILATION TERMINATED      0 ERRORS ENCOUNTERED
+
+./output/030.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no030;
+    2|		 { extra whitespace after "end." is OK }
+    3|    const yes = true; no = false;
+    4|          small = 0; smalleryet ={} -1;
+    5|          big = 1; bigger_yet = 2;
+    6|        var   some : integer;
+    7|    begin   end.
+
+COMPILATION TERMINATED      0 ERRORS ENCOUNTERED
+
+./output/031.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no031;
+    2|  { smallest syntactically correct program }
+    3|    begin
+    4|    end.    
+
+COMPILATION TERMINATED      0 ERRORS ENCOUNTERED
+
+./output/032.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no032; {this is 001.dat with much whitespace eliminated}
+    2|const yes=true;no=false;small=0;smalleryet=-1;big=1;biggeryet=2;
+    3|      large=biggeryet;maybe=not true;
+    4|var   some,many:integer;right,wrong:boolean;
+    5|begin
+    6|end.
+
+COMPILATION TERMINATED      0 ERRORS ENCOUNTERED
+
+./output/033.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program
+    2|stage0no033;
+    3|{
+    4|this
+    5|is
+    6|001.dat
+    7|with
+    8|each
+    9|token
+   10|on
+   11|a
+   12|separate
+   13|line
+   14|}
+   15|const
+   16|yes
+   17|=
+   18|true
+   19|;
+   20|no
+   21|=
+   22|false
+   23|;
+   24|small
+   25|=
+   26|0
+   27|;
+   28|smalleryet
+   29|=
+   30|-
+   31|1
+   32|;
+   33|big
+   34|=
+   35|1
+   36|;
+   37|biggeryet
+   38|=
+   39|2
+   40|;
+   41|large
+   42|=
+   43|biggeryet
+   44|;
+   45|maybe
+   46|=
+   47|not
+   48|true
+   49|;
+   50|var
+   51|some
+   52|,
+   53|many
+   54|:
+   55|integer
+   56|;
+   57|right
+   58|,
+   59|wrong
+   60|:
+   61|boolean
+   62|;
+   63|begin
+   64|end
+   65|.
+
+COMPILATION TERMINATED      0 ERRORS ENCOUNTERED
+
+./output/034.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|
+    2|program stage0no034;
+    3|  { whitespace can precede the program statement }
+    4|  { whitespace can follow end.}
+    5|    begin
+    6|    end.    
+    7|                
+    8|
+
+COMPILATION TERMINATED      0 ERRORS ENCOUNTERED
+
+./output/035.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|{ comments are OK before the program statement }
+    2|program stage0no035;
+    3|    begin
+    4|    end.    {comments are OK after end.}
+
+COMPILATION TERMINATED      0 ERRORS ENCOUNTERED
+
+./output/036.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no036_this_name_is_really_long;
+    2|    begin
+    3|    end.
+
+COMPILATION TERMINATED      0 ERRORS ENCOUNTERED
+
+./output/037.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no037_this_name_is_really_long;
+    2|    const
+    3|      stage0no037_this_name_is_really_long = true;
+
+Error: Line 3: symbol stage0no037_thi is multiply defined
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/038.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+
+Error: Line 0: keyword "program" expected
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/039.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program    stage0no039;   {here is a comment}
+    2|     const yes=true;no=false;
+    3|           small=0;smalleryet=-1;
+    4|           big = 1;  biggeryet = 2;  large = biggeryet;
+    5|		   maybe = not true;
+    6|     var   some,many:integer;
+    7|           right, wrong : boolean;
+    8|     begin
+    9|     end
+
+Error: Line 9: period expected
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/040.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no040
+    2|      {semicolon expected after program name}
+    3|
+    4|   var 
+Error: Line 4: semicolon expected
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/041.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no041;
+    2|	var const 
+Error: Line 2: non-keyword identifier must follow "var"
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/042.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no042;
+    2|
+    3|	const big = 17; small = -big;
+Error: Line 3: integer expected after sign
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/043.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no043;
+    2|
+    3|	const big = -1; small = not big;
+Error: Line 3: boolean expected after "not"
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/044.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no044;
+    2|  var
+    3|    a, b, c : integer, 
+Error: Line 3: semicolon expected
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/045.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no045;
+    2|  var
+    3|    b, var,
+Error: Line 3: non-keyword identifier expected
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/046.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program    stage0no046;   {here is a comment}
+    2|     const yes=true;no=false;
+    3|           small=0;smalleryet=-1;
+    4|           big = 1;  biggeryet = 2;  large = bigger
+Error: Line 4: unexpected end of file
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/047.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program    stage0no047;   {here is a comment}
+    2|     const yes=true;no=false;
+    3|           small=0;smalleryet=-1;
+    4|           big = 1;  biggeryet = 2
+Error: Line 4: unexpected end of file
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/048.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program    stage0no048;   {here is a comment}
+    2|     const yes=true;no=false;
+    3|           small=0;smalleryet=-1234;
+    4|           big = 1;  biggeryet = +2336;  large = biggeryet;
+    5|           maybe = not true;
+    6|           compiler = ;
+
+Error: Line 6: token to right of "=" illegal
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/049.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|{Contributed by James Dixon, 19-Oct-2018}
+    2|program    stage0no049;   {here is a comment with a double__underscore included}{here is a comment}
+    3|     const yes=true;no=false;
+    4|           small=0;smaller_yet=-1;
+    5|           big = 1;  bigger__yet 
+Error: Line 5: illegal character '_'
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/050.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|{contributed by Zachary Deere & Ryan Dennis, 29-Oct-2018}
+    2|program    stage0no050;
+    3|     const
+    4|            a = 1;
+    5|            b = a;
+    6|            c = stage0no050; 
+Error: Line 6: data type of token on the right - hand side must be INTEGER or BOOLEAN
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/051.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program    stage0no051;   {here is a comment}
+    2|     const yes=true;no=false;
+    3|           small=0;smalleryet=-1234;
+    4|           big = 1;  biggeryet = +2336;  large = biggeryet;
+    5|           zero = small;
+    6|           minus = smalleryet;
+    7|           maybe = not true;
+    8|           possible = not false;
+    9|           on = yes;
+   10|           off = no;
+   11|           fal_se = maybe;
+   12|           tru_e = possible;
+   13|     var   some,many:integer;
+   14|           right, wrong : boolean;
+   15|     begin
+   16|     end.
+
+COMPILATION TERMINATED      0 ERRORS ENCOUNTERED
+
+./output/052.my.lst
+------------------------------
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|{contributed by Joel King, 2021-Nov-28}
+    2|program    stage0no052; {tests: const non_key_id = not non_key_id;}
+    3|  const yes=true;no=false;
+    4|    should_be_true = not no;
+Error: Line 4: boolean expected after "not"
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+
+./output/001.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no001
+
+_start:                                         
+
+./output/002.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no002
+
+_start:                                         
+
+./output/003.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no003
+
+_start:                                         
+
+./output/004.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no004
+
+_start:                                         
+
+./output/005.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no005
+
+_start:                                         
+
+./output/006.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no006
+
+_start:                                         
+
+./output/007.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no007
+
+_start:                                         
+
+./output/008.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no008
+
+_start:                                         
+
+./output/009.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no009
+
+_start:                                         
+
+./output/010.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no010
+
+_start:                                         
+
+./output/011.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no011
+
+_start:                                         
+
+./output/012.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no012
+
+_start:                                         
+
+./output/013.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no013
+
+_start:                                         
+
+./output/014.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no014
+
+_start:                                         
+
+./output/015.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no015
+
+_start:                                         
+
+./output/016.my.asm
+------------------------------
+
+./output/017.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no017
+
+_start:                                         
+
+./output/018.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no018
+
+_start:                                         
+        Exit    {0}
+                            
+SECTION .data                                   
+I1      dd      5                       ; five  
+I0      dd      0                       ; zero  
+
+SECTION .bss                                    
+I2      resd    1                       ; aaaaaaaaaaaaaaa
+I3      resd    1                       ; bbbbbbbbbbbbbbb
+I4      resd    1                       ; ccccccccccccccc
+B0      resd    1                       ; d     
+I5      resd    1                       ; ddddddddddddddd
+I6      resd    1                       ; eeeeeeeeeeeeeee
+I7      resd    1                       ; fffffffffffffff
+I8      resd    1                       ; ggggggggggggggg
+I9      resd    1                       ; hhhhhhhhhhhhhhh
+I10     resd    1                       ; iiiiiiiiiiiiiii
+I11     resd    1                       ; jjjjjjjjjjjjjjj
+I12     resd    1                       ; kkkkkkkkkkkkkkk
+I13     resd    1                       ; lllllllllllllll
+I14     resd    1                       ; mmmmmmmmmmmmmmm
+I15     resd    1                       ; nnnnnnnnnnnnnnn
+I16     resd    1                       ; ooooooooooooooo
+I17     resd    1                       ; ppppppppppppppp
+I18     resd    1                       ; qqqqqqqqqqqqqqq
+I19     resd    1                       ; rrrrrrrrrrrrrrr
+I20     resd    1                       ; sssssssssssssss
+I21     resd    1                       ; ttttttttttttttt
+I22     resd    1                       ; uuuuuuuuuuuuuuu
+I23     resd    1                       ; vvvvvvvvvvvvvvv
+I24     resd    1                       ; wwwwwwwwwwwwwww
+I25     resd    1                       ; xxxxxxxxxxxxxxx
+I26     resd    1                       ; yyyyyyyyyyyyyyy
+I27     resd    1                       ; zzzzzzzzzzzzzzz
+
+./output/019.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no019
+
+_start:                                         
+
+./output/020.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no020
+
+_start:                                         
+
+./output/021.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no021
+
+_start:                                         
+
+./output/022.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no022
+
+_start:                                         
+
+./output/023.my.asm
+------------------------------
+
+./output/024.my.asm
+------------------------------
+
+./output/025.my.asm
+------------------------------
+
+./output/026.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no026
+
+_start:                                         
+        Exit    {0}
+                            
+SECTION .data                                   
+
+SECTION .bss                                    
+I0      resd    1                       ; var000
+I1      resd    1                       ; var001
+I2      resd    1                       ; var002
+I3      resd    1                       ; var003
+I4      resd    1                       ; var004
+I5      resd    1                       ; var005
+I6      resd    1                       ; var006
+I7      resd    1                       ; var007
+I8      resd    1                       ; var008
+I9      resd    1                       ; var009
+I10     resd    1                       ; var010
+I11     resd    1                       ; var011
+I12     resd    1                       ; var012
+I13     resd    1                       ; var013
+I14     resd    1                       ; var014
+I15     resd    1                       ; var015
+I16     resd    1                       ; var016
+I17     resd    1                       ; var017
+I18     resd    1                       ; var018
+I19     resd    1                       ; var019
+I20     resd    1                       ; var020
+I21     resd    1                       ; var021
+I22     resd    1                       ; var022
+I23     resd    1                       ; var023
+I24     resd    1                       ; var024
+I25     resd    1                       ; var025
+I26     resd    1                       ; var026
+I27     resd    1                       ; var027
+I28     resd    1                       ; var028
+I29     resd    1                       ; var029
+I30     resd    1                       ; var030
+I31     resd    1                       ; var031
+I32     resd    1                       ; var032
+I33     resd    1                       ; var033
+I34     resd    1                       ; var034
+I35     resd    1                       ; var035
+I36     resd    1                       ; var036
+I37     resd    1                       ; var037
+I38     resd    1                       ; var038
+I39     resd    1                       ; var039
+I40     resd    1                       ; var040
+I41     resd    1                       ; var041
+I42     resd    1                       ; var042
+I43     resd    1                       ; var043
+I44     resd    1                       ; var044
+I45     resd    1                       ; var045
+I46     resd    1                       ; var046
+I47     resd    1                       ; var047
+I48     resd    1                       ; var048
+I49     resd    1                       ; var049
+I50     resd    1                       ; var050
+I51     resd    1                       ; var051
+I52     resd    1                       ; var052
+I53     resd    1                       ; var053
+I54     resd    1                       ; var054
+I55     resd    1                       ; var055
+I56     resd    1                       ; var056
+I57     resd    1                       ; var057
+I58     resd    1                       ; var058
+I59     resd    1                       ; var059
+I60     resd    1                       ; var060
+I61     resd    1                       ; var061
+I62     resd    1                       ; var062
+I63     resd    1                       ; var063
+I64     resd    1                       ; var064
+I65     resd    1                       ; var065
+I66     resd    1                       ; var066
+I67     resd    1                       ; var067
+I68     resd    1                       ; var068
+I69     resd    1                       ; var069
+I70     resd    1                       ; var070
+I71     resd    1                       ; var071
+I72     resd    1                       ; var072
+I73     resd    1                       ; var073
+I74     resd    1                       ; var074
+I75     resd    1                       ; var075
+I76     resd    1                       ; var076
+I77     resd    1                       ; var077
+I78     resd    1                       ; var078
+I79     resd    1                       ; var079
+I80     resd    1                       ; var080
+I81     resd    1                       ; var081
+I82     resd    1                       ; var082
+I83     resd    1                       ; var083
+I84     resd    1                       ; var084
+I85     resd    1                       ; var085
+I86     resd    1                       ; var086
+I87     resd    1                       ; var087
+I88     resd    1                       ; var088
+I89     resd    1                       ; var089
+I90     resd    1                       ; var090
+I91     resd    1                       ; var091
+I92     resd    1                       ; var092
+I93     resd    1                       ; var093
+I94     resd    1                       ; var094
+I95     resd    1                       ; var095
+I96     resd    1                       ; var096
+I97     resd    1                       ; var097
+I98     resd    1                       ; var098
+I99     resd    1                       ; var099
+I100    resd    1                       ; var100
+I101    resd    1                       ; var101
+I102    resd    1                       ; var102
+I103    resd    1                       ; var103
+I104    resd    1                       ; var104
+I105    resd    1                       ; var105
+I106    resd    1                       ; var106
+I107    resd    1                       ; var107
+I108    resd    1                       ; var108
+I109    resd    1                       ; var109
+I110    resd    1                       ; var110
+I111    resd    1                       ; var111
+I112    resd    1                       ; var112
+I113    resd    1                       ; var113
+I114    resd    1                       ; var114
+I115    resd    1                       ; var115
+I116    resd    1                       ; var116
+I117    resd    1                       ; var117
+I118    resd    1                       ; var118
+I119    resd    1                       ; var119
+I120    resd    1                       ; var120
+I121    resd    1                       ; var121
+I122    resd    1                       ; var122
+I123    resd    1                       ; var123
+I124    resd    1                       ; var124
+I125    resd    1                       ; var125
+I126    resd    1                       ; var126
+I127    resd    1                       ; var127
+I128    resd    1                       ; var128
+I129    resd    1                       ; var129
+I130    resd    1                       ; var130
+I131    resd    1                       ; var131
+I132    resd    1                       ; var132
+I133    resd    1                       ; var133
+I134    resd    1                       ; var134
+I135    resd    1                       ; var135
+I136    resd    1                       ; var136
+I137    resd    1                       ; var137
+I138    resd    1                       ; var138
+I139    resd    1                       ; var139
+I140    resd    1                       ; var140
+I141    resd    1                       ; var141
+I142    resd    1                       ; var142
+I143    resd    1                       ; var143
+I144    resd    1                       ; var144
+I145    resd    1                       ; var145
+I146    resd    1                       ; var146
+I147    resd    1                       ; var147
+I148    resd    1                       ; var148
+I149    resd    1                       ; var149
+I150    resd    1                       ; var150
+I151    resd    1                       ; var151
+I152    resd    1                       ; var152
+I153    resd    1                       ; var153
+I154    resd    1                       ; var154
+I155    resd    1                       ; var155
+I156    resd    1                       ; var156
+I157    resd    1                       ; var157
+I158    resd    1                       ; var158
+I159    resd    1                       ; var159
+I160    resd    1                       ; var160
+I161    resd    1                       ; var161
+I162    resd    1                       ; var162
+I163    resd    1                       ; var163
+I164    resd    1                       ; var164
+I165    resd    1                       ; var165
+I166    resd    1                       ; var166
+I167    resd    1                       ; var167
+I168    resd    1                       ; var168
+I169    resd    1                       ; var169
+I170    resd    1                       ; var170
+I171    resd    1                       ; var171
+I172    resd    1                       ; var172
+I173    resd    1                       ; var173
+I174    resd    1                       ; var174
+I175    resd    1                       ; var175
+I176    resd    1                       ; var176
+I177    resd    1                       ; var177
+I178    resd    1                       ; var178
+I179    resd    1                       ; var179
+I180    resd    1                       ; var180
+I181    resd    1                       ; var181
+I182    resd    1                       ; var182
+I183    resd    1                       ; var183
+I184    resd    1                       ; var184
+I185    resd    1                       ; var185
+I186    resd    1                       ; var186
+I187    resd    1                       ; var187
+I188    resd    1                       ; var188
+I189    resd    1                       ; var189
+I190    resd    1                       ; var190
+I191    resd    1                       ; var191
+I192    resd    1                       ; var192
+I193    resd    1                       ; var193
+I194    resd    1                       ; var194
+I195    resd    1                       ; var195
+I196    resd    1                       ; var196
+I197    resd    1                       ; var197
+I198    resd    1                       ; var198
+I199    resd    1                       ; var199
+I200    resd    1                       ; var200
+I201    resd    1                       ; var201
+I202    resd    1                       ; var202
+I203    resd    1                       ; var203
+I204    resd    1                       ; var204
+I205    resd    1                       ; var205
+I206    resd    1                       ; var206
+I207    resd    1                       ; var207
+I208    resd    1                       ; var208
+I209    resd    1                       ; var209
+I210    resd    1                       ; var210
+I211    resd    1                       ; var211
+I212    resd    1                       ; var212
+I213    resd    1                       ; var213
+I214    resd    1                       ; var214
+I215    resd    1                       ; var215
+I216    resd    1                       ; var216
+I217    resd    1                       ; var217
+I218    resd    1                       ; var218
+I219    resd    1                       ; var219
+I220    resd    1                       ; var220
+I221    resd    1                       ; var221
+I222    resd    1                       ; var222
+I223    resd    1                       ; var223
+I224    resd    1                       ; var224
+I225    resd    1                       ; var225
+I226    resd    1                       ; var226
+I227    resd    1                       ; var227
+I228    resd    1                       ; var228
+I229    resd    1                       ; var229
+I230    resd    1                       ; var230
+I231    resd    1                       ; var231
+I232    resd    1                       ; var232
+I233    resd    1                       ; var233
+I234    resd    1                       ; var234
+I235    resd    1                       ; var235
+I236    resd    1                       ; var236
+I237    resd    1                       ; var237
+I238    resd    1                       ; var238
+I239    resd    1                       ; var239
+I240    resd    1                       ; var240
+I241    resd    1                       ; var241
+I242    resd    1                       ; var242
+I243    resd    1                       ; var243
+I244    resd    1                       ; var244
+I245    resd    1                       ; var245
+I246    resd    1                       ; var246
+I247    resd    1                       ; var247
+I248    resd    1                       ; var248
+I249    resd    1                       ; var249
+I250    resd    1                       ; var250
+I251    resd    1                       ; var251
+I252    resd    1                       ; var252
+I253    resd    1                       ; var253
+I254    resd    1                       ; var254
+
+./output/027.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no027
+
+_start:                                         
+
+./output/028.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no028
+
+_start:                                         
+        Exit    {0}
+                            
+SECTION .data                                   
+
+SECTION .bss                                    
+I0      resd    1                       ; var000
+I1      resd    1                       ; var001
+I2      resd    1                       ; var002
+I3      resd    1                       ; var003
+I4      resd    1                       ; var004
+I5      resd    1                       ; var005
+I6      resd    1                       ; var006
+I7      resd    1                       ; var007
+I8      resd    1                       ; var008
+I9      resd    1                       ; var009
+I10     resd    1                       ; var010
+I11     resd    1                       ; var011
+I12     resd    1                       ; var012
+I13     resd    1                       ; var013
+I14     resd    1                       ; var014
+I15     resd    1                       ; var015
+I16     resd    1                       ; var016
+I17     resd    1                       ; var017
+I18     resd    1                       ; var018
+I19     resd    1                       ; var019
+I20     resd    1                       ; var020
+I21     resd    1                       ; var021
+I22     resd    1                       ; var022
+I23     resd    1                       ; var023
+I24     resd    1                       ; var024
+I25     resd    1                       ; var025
+I26     resd    1                       ; var026
+I27     resd    1                       ; var027
+I28     resd    1                       ; var028
+I29     resd    1                       ; var029
+I30     resd    1                       ; var030
+I31     resd    1                       ; var031
+I32     resd    1                       ; var032
+I33     resd    1                       ; var033
+I34     resd    1                       ; var034
+I35     resd    1                       ; var035
+I36     resd    1                       ; var036
+I37     resd    1                       ; var037
+I38     resd    1                       ; var038
+I39     resd    1                       ; var039
+I40     resd    1                       ; var040
+I41     resd    1                       ; var041
+I42     resd    1                       ; var042
+I43     resd    1                       ; var043
+I44     resd    1                       ; var044
+I45     resd    1                       ; var045
+I46     resd    1                       ; var046
+I47     resd    1                       ; var047
+I48     resd    1                       ; var048
+I49     resd    1                       ; var049
+I50     resd    1                       ; var050
+I51     resd    1                       ; var051
+I52     resd    1                       ; var052
+I53     resd    1                       ; var053
+I54     resd    1                       ; var054
+I55     resd    1                       ; var055
+I56     resd    1                       ; var056
+I57     resd    1                       ; var057
+I58     resd    1                       ; var058
+I59     resd    1                       ; var059
+I60     resd    1                       ; var060
+I61     resd    1                       ; var061
+I62     resd    1                       ; var062
+I63     resd    1                       ; var063
+I64     resd    1                       ; var064
+I65     resd    1                       ; var065
+I66     resd    1                       ; var066
+I67     resd    1                       ; var067
+I68     resd    1                       ; var068
+I69     resd    1                       ; var069
+I70     resd    1                       ; var070
+I71     resd    1                       ; var071
+I72     resd    1                       ; var072
+I73     resd    1                       ; var073
+I74     resd    1                       ; var074
+I75     resd    1                       ; var075
+I76     resd    1                       ; var076
+I77     resd    1                       ; var077
+I78     resd    1                       ; var078
+I79     resd    1                       ; var079
+I80     resd    1                       ; var080
+I81     resd    1                       ; var081
+I82     resd    1                       ; var082
+I83     resd    1                       ; var083
+I84     resd    1                       ; var084
+I85     resd    1                       ; var085
+I86     resd    1                       ; var086
+I87     resd    1                       ; var087
+I88     resd    1                       ; var088
+I89     resd    1                       ; var089
+I90     resd    1                       ; var090
+I91     resd    1                       ; var091
+I92     resd    1                       ; var092
+I93     resd    1                       ; var093
+I94     resd    1                       ; var094
+I95     resd    1                       ; var095
+I96     resd    1                       ; var096
+I97     resd    1                       ; var097
+I98     resd    1                       ; var098
+I99     resd    1                       ; var099
+I100    resd    1                       ; var100
+I101    resd    1                       ; var101
+I102    resd    1                       ; var102
+I103    resd    1                       ; var103
+I104    resd    1                       ; var104
+I105    resd    1                       ; var105
+I106    resd    1                       ; var106
+I107    resd    1                       ; var107
+I108    resd    1                       ; var108
+I109    resd    1                       ; var109
+I110    resd    1                       ; var110
+I111    resd    1                       ; var111
+I112    resd    1                       ; var112
+I113    resd    1                       ; var113
+I114    resd    1                       ; var114
+I115    resd    1                       ; var115
+I116    resd    1                       ; var116
+I117    resd    1                       ; var117
+I118    resd    1                       ; var118
+I119    resd    1                       ; var119
+I120    resd    1                       ; var120
+I121    resd    1                       ; var121
+I122    resd    1                       ; var122
+I123    resd    1                       ; var123
+I124    resd    1                       ; var124
+I125    resd    1                       ; var125
+I126    resd    1                       ; var126
+I127    resd    1                       ; var127
+I128    resd    1                       ; var128
+I129    resd    1                       ; var129
+I130    resd    1                       ; var130
+I131    resd    1                       ; var131
+I132    resd    1                       ; var132
+I133    resd    1                       ; var133
+I134    resd    1                       ; var134
+I135    resd    1                       ; var135
+I136    resd    1                       ; var136
+I137    resd    1                       ; var137
+I138    resd    1                       ; var138
+I139    resd    1                       ; var139
+I140    resd    1                       ; var140
+I141    resd    1                       ; var141
+I142    resd    1                       ; var142
+I143    resd    1                       ; var143
+I144    resd    1                       ; var144
+I145    resd    1                       ; var145
+I146    resd    1                       ; var146
+I147    resd    1                       ; var147
+I148    resd    1                       ; var148
+I149    resd    1                       ; var149
+I150    resd    1                       ; var150
+I151    resd    1                       ; var151
+I152    resd    1                       ; var152
+I153    resd    1                       ; var153
+I154    resd    1                       ; var154
+I155    resd    1                       ; var155
+I156    resd    1                       ; var156
+I157    resd    1                       ; var157
+I158    resd    1                       ; var158
+I159    resd    1                       ; var159
+I160    resd    1                       ; var160
+I161    resd    1                       ; var161
+I162    resd    1                       ; var162
+I163    resd    1                       ; var163
+I164    resd    1                       ; var164
+I165    resd    1                       ; var165
+I166    resd    1                       ; var166
+I167    resd    1                       ; var167
+I168    resd    1                       ; var168
+I169    resd    1                       ; var169
+I170    resd    1                       ; var170
+I171    resd    1                       ; var171
+I172    resd    1                       ; var172
+I173    resd    1                       ; var173
+I174    resd    1                       ; var174
+I175    resd    1                       ; var175
+I176    resd    1                       ; var176
+I177    resd    1                       ; var177
+I178    resd    1                       ; var178
+I179    resd    1                       ; var179
+I180    resd    1                       ; var180
+I181    resd    1                       ; var181
+I182    resd    1                       ; var182
+I183    resd    1                       ; var183
+I184    resd    1                       ; var184
+I185    resd    1                       ; var185
+I186    resd    1                       ; var186
+I187    resd    1                       ; var187
+I188    resd    1                       ; var188
+I189    resd    1                       ; var189
+I190    resd    1                       ; var190
+I191    resd    1                       ; var191
+I192    resd    1                       ; var192
+I193    resd    1                       ; var193
+I194    resd    1                       ; var194
+I195    resd    1                       ; var195
+I196    resd    1                       ; var196
+I197    resd    1                       ; var197
+I198    resd    1                       ; var198
+I199    resd    1                       ; var199
+I200    resd    1                       ; var200
+I201    resd    1                       ; var201
+I202    resd    1                       ; var202
+I203    resd    1                       ; var203
+I204    resd    1                       ; var204
+I205    resd    1                       ; var205
+I206    resd    1                       ; var206
+I207    resd    1                       ; var207
+I208    resd    1                       ; var208
+I209    resd    1                       ; var209
+I210    resd    1                       ; var210
+I211    resd    1                       ; var211
+I212    resd    1                       ; var212
+I213    resd    1                       ; var213
+I214    resd    1                       ; var214
+I215    resd    1                       ; var215
+I216    resd    1                       ; var216
+I217    resd    1                       ; var217
+I218    resd    1                       ; var218
+I219    resd    1                       ; var219
+I220    resd    1                       ; var220
+I221    resd    1                       ; var221
+I222    resd    1                       ; var222
+I223    resd    1                       ; var223
+I224    resd    1                       ; var224
+I225    resd    1                       ; var225
+I226    resd    1                       ; var226
+I227    resd    1                       ; var227
+I228    resd    1                       ; var228
+I229    resd    1                       ; var229
+I230    resd    1                       ; var230
+I231    resd    1                       ; var231
+I232    resd    1                       ; var232
+I233    resd    1                       ; var233
+I234    resd    1                       ; var234
+I235    resd    1                       ; var235
+I236    resd    1                       ; var236
+I237    resd    1                       ; var237
+I238    resd    1                       ; var238
+I239    resd    1                       ; var239
+I240    resd    1                       ; var240
+I241    resd    1                       ; var241
+I242    resd    1                       ; var242
+I243    resd    1                       ; var243
+I244    resd    1                       ; var244
+I245    resd    1                       ; var245
+I246    resd    1                       ; var246
+I247    resd    1                       ; var247
+I248    resd    1                       ; var248
+I249    resd    1                       ; var249
+I250    resd    1                       ; var250
+I251    resd    1                       ; var251
+I252    resd    1                       ; var252
+I253    resd    1                       ; var253
+I254    resd    1                       ; var254
+
+./output/029.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no029
+
+_start:                                         
+        Exit    {0}
+                            
+SECTION .data                                   
+I2      dd      1                       ; big   
+I3      dd      2                       ; bigger_yet
+B1      dd      0                       ; no    
+I0      dd      0                       ; small 
+I1      dd      -1                      ; smalleryet
+B0      dd      -1                      ; yes   
+
+SECTION .bss                                    
+I4      resd    1                       ; some  
+
+./output/030.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no030
+
+_start:                                         
+        Exit    {0}
+                            
+SECTION .data                                   
+I2      dd      1                       ; big   
+I3      dd      2                       ; bigger_yet
+B1      dd      0                       ; no    
+I0      dd      0                       ; small 
+I1      dd      -1                      ; smalleryet
+B0      dd      -1                      ; yes   
+
+SECTION .bss                                    
+I4      resd    1                       ; some  
+
+./output/031.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no031
+
+_start:                                         
+        Exit    {0}
+                            
+SECTION .data                                   
+
+SECTION .bss                                    
+
+./output/032.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no032
+
+_start:                                         
+        Exit    {0}
+                            
+SECTION .data                                   
+I2      dd      1                       ; big   
+I3      dd      2                       ; biggeryet
+I4      dd      2                       ; large 
+B2      dd      0                       ; maybe 
+B1      dd      0                       ; no    
+I0      dd      0                       ; small 
+I1      dd      -1                      ; smalleryet
+B0      dd      -1                      ; yes   
+
+SECTION .bss                                    
+I6      resd    1                       ; many  
+B3      resd    1                       ; right 
+I5      resd    1                       ; some  
+B4      resd    1                       ; wrong 
+
+./output/033.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no033
+
+_start:                                         
+        Exit    {0}
+                            
+SECTION .data                                   
+I2      dd      1                       ; big   
+I3      dd      2                       ; biggeryet
+I4      dd      2                       ; large 
+B2      dd      0                       ; maybe 
+B1      dd      0                       ; no    
+I0      dd      0                       ; small 
+I1      dd      -1                      ; smalleryet
+B0      dd      -1                      ; yes   
+
+SECTION .bss                                    
+I6      resd    1                       ; many  
+B3      resd    1                       ; right 
+I5      resd    1                       ; some  
+B4      resd    1                       ; wrong 
+
+./output/034.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no034
+
+_start:                                         
+        Exit    {0}
+                            
+SECTION .data                                   
+
+SECTION .bss                                    
+
+./output/035.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no035
+
+_start:                                         
+        Exit    {0}
+                            
+SECTION .data                                   
+
+SECTION .bss                                    
+
+./output/036.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no036_thi
+
+_start:                                         
+        Exit    {0}
+                            
+SECTION .data                                   
+
+SECTION .bss                                    
+
+./output/037.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no037_thi
+
+_start:                                         
+
+./output/038.my.asm
+------------------------------
+
+./output/039.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no039
+
+_start:                                         
+
+./output/040.my.asm
+------------------------------
+
+./output/041.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no041
+
+_start:                                         
+
+./output/042.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no042
+
+_start:                                         
+
+./output/043.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no043
+
+_start:                                         
+
+./output/044.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no044
+
+_start:                                         
+
+./output/045.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no045
+
+_start:                                         
+
+./output/046.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no046
+
+_start:                                         
+
+./output/047.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no047
+
+_start:                                         
+
+./output/048.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no048
+
+_start:                                         
+
+./output/049.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no049
+
+_start:                                         
+
+./output/050.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no050
+
+_start:                                         
+
+./output/051.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no051
+
+_start:                                         
+        Exit    {0}
+                            
+SECTION .data                                   
+I2      dd      1                       ; big   
+I3      dd      +2336                   ; biggeryet
+B6      dd      0                       ; fal_se
+I4      dd      +2336                   ; large 
+B2      dd      0                       ; maybe 
+I6      dd      -1234                   ; minus 
+B1      dd      0                       ; no    
+B5      dd      0                       ; off   
+B4      dd      -1                      ; on    
+B3      dd      -1                      ; possible
+I0      dd      0                       ; small 
+I1      dd      -1234                   ; smalleryet
+B7      dd      -1                      ; tru_e 
+B0      dd      -1                      ; yes   
+I5      dd      0                       ; zero  
+
+SECTION .bss                                    
+I8      resd    1                       ; many  
+B8      resd    1                       ; right 
+I7      resd    1                       ; some  
+B9      resd    1                       ; wrong 
+
+./output/052.my.asm
+------------------------------
+; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+%INCLUDE "Along32.inc"
+%INCLUDE "Macros_Along.inc"
+
+SECTION .text                                   
+global  _start                          ; program stage0no052
+
+_start:                                         
+

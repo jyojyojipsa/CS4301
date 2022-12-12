@@ -1,0 +1,12 @@
+STAGE1:  Jeff Caldwell, Kangmin Kim       Sun Nov 27 09:52:20 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no014;
+    2|   {   no embedded begin-end statement allowed}
+    3|
+    4|   const car = 2;
+    5|   begin begin 
+Error: Line 5: ";", "begin", "read","write", "end" expected
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED

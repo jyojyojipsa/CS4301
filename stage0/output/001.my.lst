@@ -1,0 +1,12 @@
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program    stage0no001;   {here is a comment}
+    2|     const
+    3|     yes=true;no=false;
+    4|           small=0;smalleryet=-1;
+    5|           big = 1;  biggeryet = 2..
+Error: Line 5: semicolon expected
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED

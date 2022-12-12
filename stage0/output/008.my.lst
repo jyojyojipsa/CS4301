@@ -1,0 +1,11 @@
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no008;
+    2|	{reserved keyword var misused as nonkey_id}
+    3|
+    4|	const var 
+Error: Line 4: non-keyword identifier must follow "const"
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED

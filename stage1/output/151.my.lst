@@ -1,0 +1,20 @@
+STAGE1:  Jeff Caldwell, Kangmin Kim       Sun Nov 27 09:52:21 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage1no151;
+    2|  var
+    3|    a, b, c: boolean;
+    4|    d : boolean;
+    5|    e : integer;
+    6|begin
+    7|  b := true;
+    8|  c := false;
+    9|  a := true;
+   10|
+   11|  d := b = c = a;
+   12|  e := +(-(+5));
+   13|  write(e);
+   14|end.
+
+COMPILATION TERMINATED      0 ERRORS ENCOUNTERED

@@ -1,0 +1,17 @@
+STAGE2:  Kangmin Kim, Jeff Caldwell   Wed Dec  7 00:20:48 2022
+
+LINE NO.              SOURCE STATEMENT
+
+    1|{contributed by Mason Barnhill, 2022-Dec-2}
+    2|program mytest; {should allocate memory for exactly 2 constants}
+    3|   const
+    4|      s = -3;
+    5|      a = 2;
+    6|   var
+    7|      t,b:integer;
+    8|   begin
+    9|      t := s + -3;
+   10|      b := a + 2;
+   11|      write(t,b);
+   12|   end.
+COMPILATION TERMINATED      0 ERRORS ENCOUNTERED

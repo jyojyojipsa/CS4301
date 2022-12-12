@@ -1,0 +1,12 @@
+STAGE1:  Jeff Caldwell, Kangmin Kim       Sun Nov 27 09:52:20 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no011;
+    2|   {no real numbers in our Pascallite}
+    3|
+    4|   const car = 2;
+    5|         wrong = 3.5
+Error: Line 5: semicolon expected
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED

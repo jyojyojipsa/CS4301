@@ -1,0 +1,33 @@
+Kangmin Kim
+CS 4301
+Lab 5
+{x | x is a valid hexadecimal integer constant in MASM}
+
+Input:  ++5h --- invalid input ---
+
+Input:  --5h --- invalid input ---
+
+Input:  -1h *** valid input ***
+
+Input:  123h123h --- invalid input ---
+
+Input:  0123456789ABCDEFH *** valid input ***
+
+Input:  0123456789abcdefh *** valid input ***
+
+Input:  7fffh *** valid input ***
+
+Input:  -7FFFH *** valid input ***
+
+Input:  badgoodh --- invalid input ---
+
+Input:  face 0ffh --- invalid input ---
+
+Input:  ffffh --- invalid input ---
+
+Input:  -ffffh --- invalid input ---
+
+Input:  0ffffh *** valid input ***
+
+Input:  -0ffffh *** valid input ***
+

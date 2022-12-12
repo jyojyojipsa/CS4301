@@ -1,0 +1,13 @@
+STAGE0:  Jeff Caldwell, Kangmin Kim       Sun Nov  6 07:40:00 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no009;
+    2|    { { need a literal and '=' for a constant
+    3|  also test two opens and one close}
+    4|
+    5|   const car = 2;
+    6|         silly:b
+Error: Line 6: "=" expected
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED

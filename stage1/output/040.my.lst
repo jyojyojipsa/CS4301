@@ -1,0 +1,11 @@
+STAGE1:  Jeff Caldwell, Kangmin Kim       Sun Nov 27 09:52:20 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no040
+    2|      {semicolon expected after program name}
+    3|
+    4|   var 
+Error: Line 4: semicolon expected
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED

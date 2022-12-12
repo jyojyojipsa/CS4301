@@ -1,0 +1,9 @@
+STAGE1:  Jeff Caldwell, Kangmin Kim       Sun Nov 27 09:52:20 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no036_this_name_is_really_long;
+    2|    begin
+    3|    end.
+
+COMPILATION TERMINATED      0 ERRORS ENCOUNTERED

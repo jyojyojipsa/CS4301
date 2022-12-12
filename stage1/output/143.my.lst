@@ -1,0 +1,13 @@
+STAGE1:  Jeff Caldwell, Kangmin Kim       Sun Nov 27 09:52:21 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage1no143;
+    2|var
+    3|  a, b, c, d, e, f, g : integer;
+    4|begin
+    5|  read(a, b, c, d, e, f);
+    6|  g := ) 
+Error: Line 6: one of "*", "and", "div", "mod", ")", "+", "-", ";", "<", "<=", "<>", "=", ">", ">=", or "or" expected
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED

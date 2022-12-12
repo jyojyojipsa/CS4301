@@ -1,0 +1,30 @@
+STAGE2:  Kangmin Kim, Jeff Caldwell   Wed Dec  7 00:20:48 2022
+
+LINE NO.              SOURCE STATEMENT
+
+    1|program stage2no249;
+    2|  const n = 10;
+    3|  var pass, temp, v0, v1, v2, v3, v4, v5, v6, v7, v8, v9 : integer;
+    4|begin
+    5|  read(v0, v1, v2, v3, v4, v5, v6, v7, v8, v9);
+    6|  write(v0, v1, v2, v3, v4, v5, v6, v7, v8, v9);
+    7|
+    8|  pass := 0;
+    9|  while pass < n do
+   10|    begin
+   11|      if v0 > v1 then begin temp := v0; v0 := v1; v1 := temp; end;
+   12|      if v1 > v2 then begin temp := v1; v1 := v2; v2 := temp; end;
+   13|      if v2 > v3 then begin temp := v2; v2 := v3; v3 := temp; end;
+   14|      if v3 > v4 then begin temp := v3; v3 := v4; v4 := temp; end;
+   15|      if v4 > v5 then begin temp := v4; v4 := v5; v5 := temp; end;
+   16|      if v5 > v6 then begin temp := v5; v5 := v6; v6 := temp; end;
+   17|      if v6 > v7 then begin temp := v6; v6 := v7; v7 := temp; end;
+   18|      if v7 > v8 then begin temp := v7; v7 := v8; v8 := temp; end;
+   19|      if v8 > v9 then begin temp := v8; v8 := v9; v9 := temp; end;
+   20|      pass := pass + 1;
+   21|    end;
+   22|
+   23|  write(v0, v1, v2, v3, v4, v5, v6, v7, v8, v9);
+   24|end.
+
+COMPILATION TERMINATED      0 ERRORS ENCOUNTERED

@@ -1,0 +1,15 @@
+STAGE2:  Kangmin Kim, Jeff Caldwell   Wed Dec  7 00:20:48 2022
+
+LINE NO.              SOURCE STATEMENT
+
+    1|program stage2no235;
+    2|var t:integer;
+    3|begin    
+    4|  t := 0;
+    5|  repeat
+    6|    t := 1;
+    7|    write(t);
+    8|  until t; 
+Error: Line 8: predicate of until must be of type boolean
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED

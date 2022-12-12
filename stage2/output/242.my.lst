@@ -1,0 +1,28 @@
+STAGE2:  Kangmin Kim, Jeff Caldwell   Wed Dec  7 00:20:48 2022
+
+LINE NO.              SOURCE STATEMENT
+
+    1|program stage2no242;
+    2|  var m, n, rem:integer;
+    3|begin
+    4|  read(m);
+    5|  read(n);
+    6|  write(m);
+    7|  write(n);
+    8|
+    9|  if m < 0 then
+   10|    m := -1 * m;
+   11|  if n < 0 then
+   12|    n := -n;
+   13|
+   14|  rem := m mod n;
+   15|  while not (rem = 0) do
+   16|    begin
+   17|      m := n;
+   18|      n := rem;
+   19|      rem := m mod n;
+   20|    end;
+   21|  write(n);
+   22|end.
+
+COMPILATION TERMINATED      0 ERRORS ENCOUNTERED

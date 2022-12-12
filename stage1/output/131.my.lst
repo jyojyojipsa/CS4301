@@ -1,0 +1,12 @@
+STAGE1:  Jeff Caldwell, Kangmin Kim       Sun Nov 27 09:52:21 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage1no131;
+    2|const
+    3|  a = true;
+    4|  b = a;
+    5|  c = not a;
+Error: Line 5: boolean expected after "not"
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED

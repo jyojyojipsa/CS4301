@@ -1,0 +1,42 @@
+STAGE2:  Kangmin Kim, Jeff Caldwell   Wed Dec  7 00:20:48 2022
+
+LINE NO.              SOURCE STATEMENT
+
+    1|program stage2no240;   {CS 4301 Lab 12; determine GCD}
+    2|  var h, u, v, gcd, rem:integer;
+    3|  begin    
+    4|    read(h);
+    5|    while h > 0 do
+    6|      begin
+    7|        read(u, v);
+    8|        write(u, v);
+    9|
+   10|        if u < 0 then
+   11|          u := u * -1;
+   12|
+   13|        if (v < 0) then
+   14|          v := v * -1;
+   15|          
+   16|        if (u = 0) then
+   17|          gcd := v;
+   18|
+   19|        else if v = 0 then
+   20|          gcd := u;
+   21|
+   22|        else
+   23|          begin
+   24|            repeat
+   25|              rem := u mod v;
+   26|              u := v;
+   27|              v := rem;
+   28|            until rem = 0;
+   29|            gcd := u;
+   30|          end;
+   31|
+   32|        write(gcd);
+   33|      
+   34|        h := h - 1;
+   35|      end;
+   36|  end.
+
+COMPILATION TERMINATED      0 ERRORS ENCOUNTERED

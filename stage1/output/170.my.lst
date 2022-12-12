@@ -1,0 +1,16 @@
+STAGE1:  Jeff Caldwell, Kangmin Kim       Sun Nov 27 09:52:21 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage1no170;
+    2|const w=3;x=true;
+    3|var   a,b,c,d,e:integer;
+    4|begin
+    5|  read(a);
+    6|  d := -5;
+    7|  d := -d;
+    8|  d := -(-(-d));
+    9|  d := -x;
+Error: Line 9: binary '-' requires integer operands
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED

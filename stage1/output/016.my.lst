@@ -1,0 +1,9 @@
+STAGE1:  Jeff Caldwell, Kangmin Kim       Sun Nov 27 09:52:20 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no016;
+    2|      { { tests embedded comments should be illegal } }
+Error: Line 2: '}' cannot begin token
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED

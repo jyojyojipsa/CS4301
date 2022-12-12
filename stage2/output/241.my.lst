@@ -1,0 +1,21 @@
+STAGE2:  Kangmin Kim, Jeff Caldwell   Wed Dec  7 00:20:48 2022
+
+LINE NO.              SOURCE STATEMENT
+
+    1|program stage2no241;
+    2|  const largest = 2147483647;
+    3|  var   first, second, ct : integer;
+    4|begin    
+    5|  read(first);
+    6|  read(second);
+    7|  ct := 0;
+    8|  while ct < 47 do
+    9|    begin
+   10|      write(first);
+   11|      second := first + second;
+   12|      first := second - first;
+   13|      ct := ct + 1;
+   14|    end;
+   15|end.
+
+COMPILATION TERMINATED      0 ERRORS ENCOUNTERED

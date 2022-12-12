@@ -1,0 +1,178 @@
+Kangmin Kim
+CS 4301
+Lab 9
+{(x=, x=ans) | x is in {a,b,c}*,
+               ans = 1 if x is of the form a^ib^jc^k where i + k = j and i, j, k >= 0, and
+               ans = 0 otherwise}
+
+Input:  =
+Output:            =1
+
+Input:  ab=
+Output:            ab=1
+
+Input:  bc=
+Output:            bc=1
+
+Input:  aabb=
+Output:            aabb=1
+
+Input:  abbc=
+Output:            abbc=1
+
+Input:  bbcc=
+Output:            bbcc=1
+
+Input:  aaabbb=
+Output:            aaabbb=1
+
+Input:  aabbbc=
+Output:            aabbbc=1
+
+Input:  abbbcc=
+Output:            abbbcc=1
+
+Input:  bbbccc=
+Output:            bbbccc=1
+
+Input:  aaaabbbb=
+Output:            aaaabbbb=1
+
+Input:  aaabbbbc=
+Output:            aaabbbbc=1
+
+Input:  aabbbbcc=
+Output:            aabbbbcc=1
+
+Input:  abbbbccc=
+Output:            abbbbccc=1
+
+Input:  bbbbcccc=
+Output:            bbbbcccc=1
+
+Input:  aaaaabbbbb=
+Output:            aaaaabbbbb=1
+
+Input:  aaaabbbbbc=
+Output:            aaaabbbbbc=1
+
+Input:  aaabbbbbcc=
+Output:            aaabbbbbcc=1
+
+Input:  aabbbbbccc=
+Output:            aabbbbbccc=1
+
+Input:  abbbbbcccc=
+Output:            abbbbbcccc=1
+
+Input:  bbbbbccccc=
+Output:            bbbbbccccc=1
+
+Input:  ba=
+Output:            ba=0
+
+Input:  cb=
+Output:            cb=0
+
+Input:  ac=
+Output:            ac=0
+
+Input:  ca=
+Output:            ca=0
+
+Input:  aaabb=
+Output:            aaabb=0
+
+Input:  abbbc=
+Output:            abbbc=0
+
+Input:  abc=
+Output:            abc=0
+
+Input:  aabc=
+Output:            aabc=0
+
+Input:  abcc=
+Output:            abcc=0
+
+Input:  aaa=
+Output:            aaa=0
+
+Input:  aab=
+Output:            aab=0
+
+Input:  aac=
+Output:            aac=0
+
+Input:  aba=
+Output:            aba=0
+
+Input:  abb=
+Output:            abb=0
+
+Input:  abc=
+Output:            abc=0
+
+Input:  aca=
+Output:            aca=0
+
+Input:  acb=
+Output:            acb=0
+
+Input:  acc=
+Output:            acc=0
+
+Input:  baa=
+Output:            baa=0
+
+Input:  bab=
+Output:            bab=0
+
+Input:  bac=
+Output:            bac=0
+
+Input:  bba=
+Output:            bba=0
+
+Input:  bbb=
+Output:            bbb=0
+
+Input:  bbc=
+Output:            bbc=0
+
+Input:  bca=
+Output:            bca=0
+
+Input:  bcb=
+Output:            bcb=0
+
+Input:  bcc=
+Output:            bcc=0
+
+Input:  caa=
+Output:            caa=0
+
+Input:  cab=
+Output:            cab=0
+
+Input:  cac=
+Output:            cac=0
+
+Input:  cba=
+Output:            cba=0
+
+Input:  cbb=
+Output:            cbb=0
+
+Input:  cbc=
+Output:            cbc=0
+
+Input:  cca=
+Output:            cca=0
+
+Input:  ccb=
+Output:            ccb=0
+
+Input:  ccc=
+Output:            ccc=0
+

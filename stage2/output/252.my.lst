@@ -1,0 +1,16 @@
+STAGE2:  Kangmin Kim, Jeff Caldwell   Wed Dec  7 00:20:48 2022
+
+LINE NO.              SOURCE STATEMENT
+
+    1|{contributed by Joel King and William Blazier, 2021-Dec-05}
+    2|program stage2no252;
+    3|begin    
+    4|  begin
+    5|  end;
+    6|  begin
+    7|  end;
+    8|{Missing the final "end."}
+
+Error: Line 8: reference to undefined variable
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED

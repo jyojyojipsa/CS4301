@@ -1,0 +1,33 @@
+Kangmin Kim
+CS 4301
+Lab 6
+{a^ib^jc^k | i + k = j and i,j,k >= 0}
+
+Input:    Result:  ** accepted **
+
+Input:  ab  Result:  ** accepted **
+
+Input:  aab  Result:  ** accepted **
+
+Input:  aaab  Result:  ** accepted **
+
+Input:  aabb  Result:  -- NOT accepted --
+
+Input:  aaabb  Result:  -- NOT accepted --
+
+Input:  aaaaaabb  Result:  -- NOT accepted --
+
+Input:  aaaaaaaaabbb  Result:  -- NOT accepted --
+
+Input:  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab  Result:  -- NOT accepted --
+
+Input:  abbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb  Result:  -- NOT accepted --
+
+Input:  abb  Result:  -- NOT accepted --
+
+Input:  abbb  Result:  -- NOT accepted --
+
+Input:  abababaaababaa  Result:  -- NOT accepted --
+
+Input:  bbbababaa  Result:  -- NOT accepted --
+

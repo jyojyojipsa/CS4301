@@ -1,0 +1,65 @@
+Your Name
+CS 4301
+Lab 6
+{a^ib^jc^k | i + k = j and i,j,k >= 0}
+
+Input:    Result:  ** accepted **
+
+Input:  ab  Result:  ** accepted **
+
+Input:  bc  Result:  ** accepted **
+
+Input:  aabb  Result:  ** accepted **
+
+Input:  abbc  Result:  ** accepted **
+
+Input:  bbcc  Result:  ** accepted **
+
+Input:  aaabbb  Result:  ** accepted **
+
+Input:  aabbbc  Result:  ** accepted **
+
+Input:  abbbcc  Result:  ** accepted **
+
+Input:  bbbccc  Result:  ** accepted **
+
+Input:  aaaabbbb  Result:  ** accepted **
+
+Input:  aaabbbbc  Result:  ** accepted **
+
+Input:  aabbbbcc  Result:  ** accepted **
+
+Input:  abbbbccc  Result:  ** accepted **
+
+Input:  bbbbcccc  Result:  ** accepted **
+
+Input:  aaaaabbbbb  Result:  ** accepted **
+
+Input:  aaaabbbbbc  Result:  ** accepted **
+
+Input:  aaabbbbbcc  Result:  ** accepted **
+
+Input:  aabbbbbccc  Result:  ** accepted **
+
+Input:  abbbbbcccc  Result:  ** accepted **
+
+Input:  bbbbbccccc  Result:  ** accepted **
+
+Input:  ba  Result:  -- NOT accepted --
+
+Input:  cb  Result:  -- NOT accepted --
+
+Input:  ac  Result:  -- NOT accepted --
+
+Input:  ca  Result:  -- NOT accepted --
+
+Input:  aaabb  Result:  -- NOT accepted --
+
+Input:  abbbc  Result:  -- NOT accepted --
+
+Input:  abc  Result:  -- NOT accepted --
+
+Input:  aabc  Result:  -- NOT accepted --
+
+Input:  abcc  Result:  -- NOT accepted --
+

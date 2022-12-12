@@ -1,0 +1,13 @@
+STAGE1:  Jeff Caldwell, Kangmin Kim       Sun Nov 27 09:52:21 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage1no130;
+    2|const
+    3|  one = 1;
+    4|  two = 2;
+    5|begin
+    6|  write(one + 
+Error: Line 6: ',' or ')' expected after non-keyword identifier
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED

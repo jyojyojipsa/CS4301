@@ -1,0 +1,19 @@
+STAGE2:  Kangmin Kim, Jeff Caldwell   Wed Dec  7 00:20:48 2022
+
+LINE NO.              SOURCE STATEMENT
+
+    1|program stage2no215;  {improper uses of Pascallite features.}
+    2|  var x,y,z:integer;  why:boolean;
+    3|  begin
+    4|    x := 24;
+    5|	if x > 0 then  
+    6|	   z:=0;
+    7|	    
+    8|	else ;          {can use null statement, though}
+    9| 
+   10|    begin;
+   11|  	    if x = 3 then; end;  {improper nesting}
+   12|	  else 
+Error: Line 12: one of ";", "begin", "if", "read", "repeat", "while", "write", "end", or "until" expected
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED

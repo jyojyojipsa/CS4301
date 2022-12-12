@@ -1,0 +1,91 @@
+STAGE2:  Kangmin Kim, Jeff Caldwell   Wed Dec  7 00:20:48 2022
+
+LINE NO.              SOURCE STATEMENT
+
+    1|program stage2no248;
+    2|  var m, n, cmp, x, y:integer;
+    3|begin
+    4|  read(x);
+    5|  read(y);
+    6|  write(x);
+    7|  write(y);
+    8|
+    9|  cmp := 0;
+   10|  m := x; n := y;
+   11|  if m < n then
+   12|    cmp := cmp + 1;
+   13|  cmp := cmp + 2;
+   14|  write(cmp);
+   15|
+   16|  cmp := 0;
+   17|  m := x; n := y;
+   18|  while m < n do
+   19|    begin
+   20|      m := m + 1;
+   21|      if m < n then
+   22|        cmp := cmp + 1;
+   23|    end;
+   24|  write(cmp);
+   25|
+   26|  cmp := 0;
+   27|  m := x; n := y;
+   28|  if m < n then
+   29|    cmp := 1;
+   30|  ;
+   31|  write(cmp);
+   32|
+   33|  cmp := 0;
+   34|  m := x; n := y;
+   35|  if m < n then
+   36|    cmp := 1;
+   37|  write(cmp);
+   38|
+   39|  cmp := 0;
+   40|  m := x; n := y;
+   41|  if m < n then
+   42|    cmp := 1;
+   43|  if m = n then
+   44|    cmp := 2;
+   45|  write(cmp);
+   46|
+   47|  cmp := 0;
+   48|  m := x; n := y;
+   49|  if m < n then
+   50|    cmp := 1;
+   51|  while m < n do
+   52|    begin
+   53|      m := m + 1;
+   54|      if m < n then
+   55|        cmp := cmp + 1;
+   56|    end;
+   57|  write(cmp);
+   58|
+   59|  cmp := 0;
+   60|  m := x; n := y;
+   61|  if m < n then
+   62|    cmp := 1;
+   63|  repeat
+   64|    m := m + 1;
+   65|    if m < n then
+   66|      cmp := cmp + 1;
+   67|  until m >= n;
+   68|  write(cmp);
+   69|
+   70|  cmp := 0;
+   71|  m := x; n := y;
+   72|  if m < n then
+   73|    cmp := 1;
+   74|  begin
+   75|    write(cmp);
+   76|  end;
+   77|
+   78|  cmp := 0;
+   79|  m := x; n := y;
+   80|  if m < n then
+   81|    cmp := 1;
+   82|  read(cmp);
+   83|  write(cmp);
+   84|
+   85|end.
+
+COMPILATION TERMINATED      0 ERRORS ENCOUNTERED

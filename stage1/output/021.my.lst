@@ -1,0 +1,10 @@
+STAGE1:  Jeff Caldwell, Kangmin Kim       Sun Nov 27 09:52:20 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no021;
+    2|		 { No caps for us at all}
+    3|    const Y
+Error: Line 3: illegal symbol
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED

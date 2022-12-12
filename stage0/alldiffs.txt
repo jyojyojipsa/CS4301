@@ -1,0 +1,253 @@
+All Listing and Assembly File Diffs
+
+001.lst diffs
+1c1
+< STAGE0:  YOUR NAME(S)       Mon Oct 19 17:06:18 2020
+---
+> STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+6,13c6,10
+<     2|     const yes=true;no=false;
+<     3|           small=0;smalleryet=-1;
+<     4|           big = 1;  biggeryet = 2;  large = biggeryet;
+<     5|		   maybe = not true;
+<     6|     var   some,many:integer;
+<     7|           right, wrong : boolean;
+<     8|     begin
+<     9|     end.
+---
+>     2|     const
+>     3|     yes=true;no=false;
+>     4|           small=0;smalleryet=-1;
+>     5|           big = 1;  biggeryet = 2..
+> Error: Line 5: semicolon expected
+15c12
+< COMPILATION TERMINATED      0 ERRORS ENCOUNTERED
+---
+> COMPILATION TERMINATED      1 ERROR ENCOUNTERED
+------------------------------
+
+002.lst diffs
+1c1
+< STAGE0:  YOUR NAME(S)       Mon Oct 19 17:06:18 2020
+---
+> STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+------------------------------
+
+003.lst diffs
+1c1
+< STAGE0:  YOUR NAME(S)       Mon Oct 19 17:06:18 2020
+---
+> STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+------------------------------
+
+004.lst diffs
+1c1
+< STAGE0:  YOUR NAME(S)       Mon Oct 19 17:06:18 2020
+---
+> STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+------------------------------
+
+018.lst diffs
+1c1
+< STAGE0:  YOUR NAME(S)       Mon Oct 19 17:06:18 2020
+---
+> STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+------------------------------
+
+026.lst diffs
+1c1
+< STAGE0:  YOUR NAME(S)       Mon Oct 19 17:06:18 2020
+---
+> STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+------------------------------
+
+028.lst diffs
+1c1
+< STAGE0:  YOUR NAME(S)       Mon Oct 19 17:06:18 2020
+---
+> STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+------------------------------
+
+029.lst diffs
+1c1
+< STAGE0:  YOUR NAME(S)       Mon Oct 19 17:06:19 2020
+---
+> STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+------------------------------
+
+030.lst diffs
+1c1
+< STAGE0:  YOUR NAME(S)       Mon Oct 19 17:06:19 2020
+---
+> STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+12,14d11
+<     8|
+<     9|
+<    10|
+------------------------------
+
+031.lst diffs
+1c1
+< STAGE0:  YOUR NAME(S)       Mon Oct 19 17:06:19 2020
+---
+> STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+------------------------------
+
+032.lst diffs
+1c1
+< STAGE0:  YOUR NAME(S)       Mon Oct 19 17:06:19 2020
+---
+> STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+------------------------------
+
+033.lst diffs
+1c1
+< STAGE0:  YOUR NAME(S)       Mon Oct 19 17:06:19 2020
+---
+> STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+------------------------------
+
+034.lst diffs
+1c1
+< STAGE0:  YOUR NAME(S)       Mon Oct 19 17:06:19 2020
+---
+> STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+------------------------------
+
+035.lst diffs
+1c1
+< STAGE0:  YOUR NAME(S)       Mon Oct 19 17:06:19 2020
+---
+> STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+------------------------------
+
+036.lst diffs
+1c1
+< STAGE0:  YOUR NAME(S)       Mon Oct 19 17:06:19 2020
+---
+> STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+------------------------------
+
+001.asm diffs
+1c1
+< ; YOUR NAME(S)       Mon Oct 19 17:06:18 2020
+---
+> ; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+9,25d8
+<         Exit    {0}                     
+< 
+< SECTION .data                           
+< I2      dd      1                       ; big
+< I3      dd      2                       ; biggeryet
+< I4      dd      2                       ; large
+< B2      dd      0                       ; maybe
+< B1      dd      0                       ; no
+< I0      dd      0                       ; small
+< I1      dd      -1                      ; smalleryet
+< B0      dd      -1                      ; yes
+< 
+< SECTION .bss                            
+< I6      resd    1                       ; many
+< B3      resd    1                       ; right
+< I5      resd    1                       ; some
+< B4      resd    1                       ; wrong
+------------------------------
+
+002.asm diffs
+1c1
+< ; YOUR NAME(S)       Mon Oct 19 17:06:18 2020
+---
+> ; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+------------------------------
+
+003.asm diffs
+1c1
+< ; YOUR NAME(S)       Mon Oct 19 17:06:18 2020
+---
+> ; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+------------------------------
+
+004.asm diffs
+1c1
+< ; YOUR NAME(S)       Mon Oct 19 17:06:18 2020
+---
+> ; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+------------------------------
+
+018.asm diffs
+1c1
+< ; YOUR NAME(S)       Mon Oct 19 17:06:18 2020
+---
+> ; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+------------------------------
+
+026.asm diffs
+1c1
+< ; YOUR NAME(S)       Mon Oct 19 17:06:18 2020
+---
+> ; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+------------------------------
+
+028.asm diffs
+1c1
+< ; YOUR NAME(S)       Mon Oct 19 17:06:18 2020
+---
+> ; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+------------------------------
+
+029.asm diffs
+1c1
+< ; YOUR NAME(S)       Mon Oct 19 17:06:19 2020
+---
+> ; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+------------------------------
+
+030.asm diffs
+1c1
+< ; YOUR NAME(S)       Mon Oct 19 17:06:19 2020
+---
+> ; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+------------------------------
+
+031.asm diffs
+1c1
+< ; YOUR NAME(S)       Mon Oct 19 17:06:19 2020
+---
+> ; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+------------------------------
+
+032.asm diffs
+1c1
+< ; YOUR NAME(S)       Mon Oct 19 17:06:19 2020
+---
+> ; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+------------------------------
+
+033.asm diffs
+1c1
+< ; YOUR NAME(S)       Mon Oct 19 17:06:19 2020
+---
+> ; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+------------------------------
+
+034.asm diffs
+1c1
+< ; YOUR NAME(S)       Mon Oct 19 17:06:19 2020
+---
+> ; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+------------------------------
+
+035.asm diffs
+1c1
+< ; YOUR NAME(S)       Mon Oct 19 17:06:19 2020
+---
+> ; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+------------------------------
+
+036.asm diffs
+1c1
+< ; YOUR NAME(S)       Mon Oct 19 17:06:19 2020
+---
+> ; Kangmin Kim, Jeff Caldwell       Thu Nov 10 17:30:52 2022
+------------------------------
+

@@ -1,0 +1,47 @@
+Your Name
+CS 4301
+Lab 4
+{x | x is in {a, b}+, and x has exactly two a's and an odd number of b's}
+
+Input:  aab *** valid input ***
+
+Input:  aba *** valid input ***
+
+Input:  baa *** valid input ***
+
+Input:  babab *** valid input ***
+
+Input:  aabbb *** valid input ***
+
+Input:  bbbaa *** valid input ***
+
+Input:  abbba *** valid input ***
+
+Input:  aabbbbb *** valid input ***
+
+Input:  bbbbbbbaa *** valid input ***
+
+Input:  bbbabbbabbb *** valid input ***
+
+Input:   --- invalid input ---
+
+Input:  a --- invalid input ---
+
+Input:  b --- invalid input ---
+
+Input:  aa --- invalid input ---
+
+Input:  ab --- invalid input ---
+
+Input:  ba --- invalid input ---
+
+Input:  bb --- invalid input ---
+
+Input:  aaa --- invalid input ---
+
+Input:  bbb --- invalid input ---
+
+Input:  abba --- invalid input ---
+
+Input:  abbbba --- invalid input ---
+

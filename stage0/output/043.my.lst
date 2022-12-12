@@ -1,0 +1,10 @@
+STAGE0:  Jeff Caldwell, Kangmin Kim       Thu Nov 10 17:30:52 2022
+
+LINE NO.               SOURCE STATEMENT
+
+    1|program stage0no043;
+    2|
+    3|	const big = -1; small = not big;
+Error: Line 3: boolean expected after "not"
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED

@@ -1,0 +1,33 @@
+STAGE2:  Kangmin Kim, Jeff Caldwell   Wed Dec  7 00:20:48 2022
+
+LINE NO.              SOURCE STATEMENT
+
+    1|program stage2no247;
+    2|  var m, n, cmp:integer;
+    3|begin
+    4|  read(m);
+    5|  read(n);
+    6|  write(m);
+    7|  write(n);
+    8|
+    9|  cmp := 0;
+   10|  if m <= n then
+   11|    if m = n then
+   12|      cmp := 1;
+   13|    else
+   14|      cmp := 2;
+   15|  write(cmp);
+   16|
+   17|  cmp := 0;
+   18|  if m <= n then
+   19|    begin
+   20|      if m = n then
+   21|        cmp := 1;
+   22|    end;
+   23|  else
+   24|    cmp := 2;
+   25|  write(cmp);
+   26|
+   27|end.
+
+COMPILATION TERMINATED      0 ERRORS ENCOUNTERED

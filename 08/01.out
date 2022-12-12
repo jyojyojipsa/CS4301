@@ -1,0 +1,69 @@
+Your Name
+CS 4301
+Lab 8
+{a^ib^j,c^k | i, j > 0; k = min(i, j)}
+
+Input:    Output:       -- NOT accepted --
+
+Input:  a  Output:       -- NOT accepted --
+
+Input:  b  Output:       -- NOT accepted --
+
+Input:  aa  Output:       -- NOT accepted --
+
+Input:  ab  Output:  c     ** accepted **
+
+Input:  ba  Output:       -- NOT accepted --
+
+Input:  bb  Output:       -- NOT accepted --
+
+Input:  aaa  Output:       -- NOT accepted --
+
+Input:  aab  Output:  c     ** accepted **
+
+Input:  aba  Output:  c     -- NOT accepted --
+
+Input:  abb  Output:  c     ** accepted **
+
+Input:  baa  Output:       -- NOT accepted --
+
+Input:  bab  Output:       -- NOT accepted --
+
+Input:  bba  Output:       -- NOT accepted --
+
+Input:  bbb  Output:       -- NOT accepted --
+
+Input:  aaab  Output:  c     ** accepted **
+
+Input:  aabb  Output:  cc     ** accepted **
+
+Input:  abbb  Output:  c     ** accepted **
+
+Input:  aaaab  Output:  c     ** accepted **
+
+Input:  aaabb  Output:  cc     ** accepted **
+
+Input:  aabbb  Output:  cc     ** accepted **
+
+Input:  abbbb  Output:  c     ** accepted **
+
+Input:  aaaaab  Output:  c     ** accepted **
+
+Input:  aaaabb  Output:  cc     ** accepted **
+
+Input:  aaabbb  Output:  ccc     ** accepted **
+
+Input:  aabbbb  Output:  cc     ** accepted **
+
+Input:  abbbbb  Output:  c     ** accepted **
+
+Input:  aaaaaba  Output:  c     -- NOT accepted --
+
+Input:  aaaabba  Output:  cc     -- NOT accepted --
+
+Input:  aaabbbab  Output:  ccc     -- NOT accepted --
+
+Input:  aabbbbaba  Output:  cc     -- NOT accepted --
+
+Input:  abbbbbaabb  Output:  c     -- NOT accepted --
+

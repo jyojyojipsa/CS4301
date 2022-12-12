@@ -1,0 +1,14 @@
+STAGE2:  Kangmin Kim, Jeff Caldwell   Wed Dec  7 00:20:48 2022
+
+LINE NO.              SOURCE STATEMENT
+
+    1|{contributed by Joel King and William Blazier, 2021-Dec-05}
+    2|program stage2no250;
+    3|begin    
+    4|  begin
+    5|  end;
+    6|  begin
+    7|  end. 
+Error: Line 7: non-keyword id, "read", or "write" expected 
+
+COMPILATION TERMINATED      1 ERROR ENCOUNTERED

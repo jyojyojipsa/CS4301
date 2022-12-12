@@ -1,0 +1,95 @@
+Your Name
+CS 4301
+Lab 7
+{w | w in {a, b}* and w has twice as many a's as b's}
+
+Input:    Result:  ** accepted **
+
+Input:  a  Result:  -- NOT accepted --
+
+Input:  b  Result:  -- NOT accepted --
+
+Input:  aa  Result:  -- NOT accepted --
+
+Input:  ab  Result:  -- NOT accepted --
+
+Input:  ba  Result:  -- NOT accepted --
+
+Input:  bb  Result:  -- NOT accepted --
+
+Input:  aaa  Result:  -- NOT accepted --
+
+Input:  aab  Result:  ** accepted **
+
+Input:  aba  Result:  ** accepted **
+
+Input:  abb  Result:  -- NOT accepted --
+
+Input:  baa  Result:  ** accepted **
+
+Input:  bab  Result:  -- NOT accepted --
+
+Input:  bba  Result:  -- NOT accepted --
+
+Input:  bbb  Result:  -- NOT accepted --
+
+Input:  aaba  Result:  -- NOT accepted --
+
+Input:  aabb  Result:  -- NOT accepted --
+
+Input:  abab  Result:  -- NOT accepted --
+
+Input:  babb  Result:  -- NOT accepted --
+
+Input:  bbba  Result:  -- NOT accepted --
+
+Input:  aaaab  Result:  -- NOT accepted --
+
+Input:  aabab  Result:  -- NOT accepted --
+
+Input:  baaaa  Result:  -- NOT accepted --
+
+Input:  aaaabb  Result:  ** accepted **
+
+Input:  aaabab  Result:  ** accepted **
+
+Input:  aaabba  Result:  ** accepted **
+
+Input:  aabaab  Result:  ** accepted **
+
+Input:  aababa  Result:  ** accepted **
+
+Input:  aabbaa  Result:  ** accepted **
+
+Input:  abaaab  Result:  ** accepted **
+
+Input:  abaaba  Result:  ** accepted **
+
+Input:  ababaa  Result:  ** accepted **
+
+Input:  abbaaa  Result:  ** accepted **
+
+Input:  baaaab  Result:  ** accepted **
+
+Input:  baaaba  Result:  ** accepted **
+
+Input:  baabaa  Result:  ** accepted **
+
+Input:  babaaa  Result:  ** accepted **
+
+Input:  bbaaaa  Result:  ** accepted **
+
+Input:  aaabbbb  Result:  -- NOT accepted --
+
+Input:  baaabaab  Result:  -- NOT accepted --
+
+Input:  bbaaaaab  Result:  -- NOT accepted --
+
+Input:  bbbaaaaa  Result:  -- NOT accepted --
+
+Input:  aaaaaabbbb  Result:  -- NOT accepted --
+
+Input:  aaaabbbbbb  Result:  -- NOT accepted --
+
+Input:  bbbbaaaaaa  Result:  -- NOT accepted --
+

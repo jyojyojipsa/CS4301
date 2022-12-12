@@ -1,0 +1,12 @@
+STAGE2:  Kangmin Kim, Jeff Caldwell   Wed Dec  7 00:20:48 2022
+
+LINE NO.              SOURCE STATEMENT
+
+    1|program stage2no234;
+    2|begin    
+    3|  repeat
+    4|    ;
+    5|  until true;
+    6|end.
+
+COMPILATION TERMINATED      0 ERRORS ENCOUNTERED
