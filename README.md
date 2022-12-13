@@ -3,7 +3,7 @@
 ## Kangmin Kim
 
 ```
-This repository is made for Angelo State University students.
+This repository is made for reviewing my work.
 ```
 - [ ] lab 02 - 90%
 - [x] lab 03
